@@ -1,8 +1,5 @@
 var timeEl = document.querySelector(".time-left");
-
-
-
-var mainEl = document.getElementById("header");
+// var mainEl = document.getElementById("header");
 
 var secondsLeft = 60;
 
