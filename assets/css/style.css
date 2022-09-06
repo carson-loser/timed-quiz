@@ -58,13 +58,20 @@ h1 {
 .rules-list {
   width: 700px;
   margin-top: 20px;
-  /* text-align: center; */
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
 .rules-underline {
   text-decoration: underline;
+}
+
+.rules {
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+  
 }
 
 .hiScoreBtn:hover {

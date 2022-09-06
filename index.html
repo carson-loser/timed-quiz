@@ -1,53 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel ="stylesheet" href = "assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>JavaScript Quiz</title>
 </head>
+
 <body>
   <header>
     <div class="highscores">
       <button class="hiScoreBtn">View Your Highscores</button>
     </div>
-    <div class = "timer-loc">
-      <div class ="timer">Time: <span class="time-left">60</span></div>
+    <div class="timer-loc">
+      <div class="timer">Time: <span class="time-left">60</span></div>
     </div>
   </header>
 
 
   <h1>JavaScript Quiz Challenge</h1>
 
-  <div class = "rules-title">
+  <div class="rules-title">
     <p>
-      <span class = "rules-underline">Rules</span>
+      <span class="rules-underline">Rules</span>
     </p>
   </div>
 
-  <div class="rules-list">
-    
-      <div class="rules"> 1. When ready, click the "Start" button below to begin the quiz</v >
-      <div class="rules"> 2. You will have 60 seconds to complete 5 questions</v >
-      <div class="rules"> 3. Each question that is answered incorrectly will take 15 seconds off the timer</v >
-      <div class="rules"> 4. When you finish the quiz, or if the timer runs out, submit your initials in the prompted box to keep track of your score</li>
-      <div class="rules"> 5. Come back frequently until you get all 5 correct!</v >
-      <div class="rules"> 6. Good luck!</v >
-     
+  <div class="rules-list"></div>
+    <ul>
+      <li class="rules"> 1. When ready, click the "Start Quiz" button below to begin the quiz</li>
+      <li class="rules"> 2. You will have 60 seconds to complete 5 JavaScript based questions</li>
+      <li class="rules"> 3. Each question that is answered incorrectly will result in 15 seconds off your remaining time</li>
+      <li class="rules"> 4. When you finish the quiz, or if the timer runs out, submit your initials in the prompted box to keep track of your score</li>
+      <li class="rules"> 5. Come back frequently until you're able to get all 5 questions correct!</li>
+      <li class="rules"> 6. Good luck!</li>
+    </ul>
+            
+  <div class="startbtn-loc">
+      <button class="start-btn">Start Quiz</button>
   </div>
 
-  <div class="startbtn-loc">
-    <button class ="start-btn">Start Quiz</button>
-  </div>  
-  
+<section>
+  <div class = "question">
+   <span>Inside which HTML element do we put the JavaScript?</span>
+  </div>
+  <div class = "question-ans-list">
+    <div class = "answers">
+      <span>js</span>
+    </div>
+    <div class = "answers">
+      <span>scripting</span>
+    </div>
+    <div class = "answers">
+      <span>script</span>
+    </div>
+    <div class = "answers">
+      <span>javascript</span>
+    </div>
 
-  
-  
-  
-  
- 
-  
+  </div>
+
+
+</section>
 
 
 
@@ -56,6 +72,13 @@
 
 
 
-  <script src="./assets/javascript/script.js"></script>
+
+
+
+
+
+
+<script src="./assets/javascript/script.js"></script>
 </body>
+
 </html>

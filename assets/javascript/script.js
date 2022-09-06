@@ -1,5 +1,39 @@
+var start_btn = document.querySelector(".start-btn");
+var hiscore_btn = document.querySelector(".hiScoreBtn");
+
+// add an event listener for clicking start quiz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var timeEl = document.querySelector(".time-left");
-// var mainEl = document.getElementById("header");
+
 
 var secondsLeft = 60;
 
