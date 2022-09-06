@@ -47,6 +47,26 @@ h1 {
   margin: 6px;
 }
 
+
+.rules-title {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.rules-list {
+  width: 700px;
+  margin-top: 20px;
+  /* text-align: center; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rules-underline {
+  text-decoration: underline;
+}
+
 .hiScoreBtn:hover {
   background-color:#0a2333;
 }
