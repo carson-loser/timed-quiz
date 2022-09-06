@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background: #F2F4F3;
+}
+
+
+header {
+  padding: 20px;
+  background-color: #D9D9D9;
+  color: black;
+  border-bottom: 12px solid #284B63;
+}
+
+.highscores {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.timer {
+  /* display: inline-block; */
+  float: right;
+  font-weight: bold;
+  
+}
+
+h1 {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.hiScoreBtn {
+  background-color: #284B63;
+  color: white;
+  padding: 9px 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  transition: background-color 0.15s;
+  margin: 6px;
+}
+
+.hiScoreBtn:hover {
+  background-color:#0a2333;
+}
