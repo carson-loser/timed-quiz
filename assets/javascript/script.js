@@ -5,16 +5,13 @@ var hiscore_btn = document.querySelector(".hiScoreBtn");
 
 start_btn.addEventListener("click", function (event) {
   event.preventDefault()
-  document.querySelector(".question").style = "display:block";
+  document.querySelector(".question1").style = "display:block";
   document.querySelector(".start-section").style = "display:none";
   setTime();
   que2();
 });
 
 function que2() {
-
-
-
   var answerButtons = document.querySelectorAll(".ans1-button");
   console.log(answerButtons);
 
@@ -22,8 +19,7 @@ function que2() {
     answerButtons[i].addEventListener("click", function (event) {
       event.preventDefault()
       document.querySelector(".question2").style = "display:block";
-      document.querySelector(".question").style = "display:none";
-
+      document.querySelector(".question1").style = "display:none";
     });
 
   }
@@ -31,9 +27,6 @@ function que2() {
 }
 
 function que3() {
-
-
-
   var answerButtons = document.querySelectorAll(".ans2-button");
   console.log(answerButtons);
 
@@ -42,17 +35,12 @@ function que3() {
       event.preventDefault()
       document.querySelector(".question3").style = "display:block";
       document.querySelector(".question2").style = "display:none";
-
     });
-
   }
   que4();
 }
 
 function que4() {
-
-
-
   var answerButtons = document.querySelectorAll(".ans3-button");
   console.log(answerButtons);
 
@@ -61,16 +49,12 @@ function que4() {
       event.preventDefault()
       document.querySelector(".question4").style = "display:block";
       document.querySelector(".question3").style = "display:none";
-
     });
   }
   que5();
 }
 
 function que5() {
-
-
-
   var answerButtons = document.querySelectorAll(".ans4-button");
   console.log(answerButtons);
 
@@ -79,7 +63,6 @@ function que5() {
       event.preventDefault()
       document.querySelector(".question5").style = "display:block";
       document.querySelector(".question4").style = "display:none";
-
     });
   }
 }

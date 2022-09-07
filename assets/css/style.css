@@ -103,3 +103,40 @@ h1 {
   background-color:#0a2333;
 
 }
+
+.question-title {
+  margin-top: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.question1,
+.question2,
+.question3,
+.question4,
+.question5 {
+  text-align: center;
+}
+
+.ans1-button {
+    background-color: #284B63;
+    color:  #D9D9D9;
+    padding: 9px 16px;
+    /* border-color:  rgb(24, 101, 202); */
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    /* transition: background-color 0.15s,
+    border-width 0.15s; */
+    margin-right: 6px;
+    margin-top: 10px;
+  }
+
+  .ans1-button:hover {
+    background-color: #D9D9D9;
+    color: #284B63;
+  }
