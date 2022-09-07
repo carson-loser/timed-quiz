@@ -9,17 +9,22 @@ start_btn.addEventListener("click", function (event) {
   document.querySelector(".start-section").style = "display:none";
   setTime();
   que2();
+  // correctQue();
 });
 
 function que2() {
   var answerButtons = document.querySelectorAll(".ans1-button");
   console.log(answerButtons);
 
+  // function correctQue()
+  // var correctButtons = document.querySelectorAll(".correct-btn");
+  // console.log(correctButtons);
   for (let i = 0; i < answerButtons.length; i++) {
     answerButtons[i].addEventListener("click", function (event) {
       event.preventDefault()
       document.querySelector(".question2").style = "display:block";
       document.querySelector(".question1").style = "display:none";
+      // document.querySelector(".correct-btn").style ="background-color:green";
     });
 
   }
