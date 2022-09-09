@@ -1,4 +1,4 @@
-* {
+ * {
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
@@ -8,8 +8,7 @@
 
 
 
-
-header {
+ header {
   padding: 20px;
   background-color: #D9D9D9;
   color: black;
@@ -79,16 +78,21 @@ h1 {
 }
 
 
+.main-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-
-.startbtn-loc {
+/* .startbtn {
   text-align: center;
   margin-top: 40px;
  
-}
+}  */
 
-
-.start-btn {
+.next-btn-real,
+.start-btn-real {
   background-color: #284B63;
   color: #D9D9D9;
   font-weight: bolder;
@@ -97,20 +101,80 @@ h1 {
   font-size: 23px;
   border-radius: 10px;
   cursor: pointer;
+  margin-right: 10px;
 }
 
-.start-btn:hover {
+
+.next-btn-real:hover,
+.start-btn-real:hover {
   background-color:#0a2333;
 
 }
 
-.question-title {
+#next-btn-loc {
+  display: none;
+}
+
+
+
+.question {
   margin-top: 25px;
   text-align: center;
   font-weight: bold;
 }
 
+.answer-btns {
+  display: grid;
+  justify-content: center;
+  
+}
 
+.btn-ans {
+  background-color: #284B63;
+  color:  #D9D9D9;
+  padding: 9px 16px;
+   border-style: solid;
+  border-radius: 20px;
+  border-width: 1px; 
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color .2s;
+  border-width: 0.15s; 
+  margin-right: 6px;
+  margin-top: 10px;
+  width: 280px;
+}
+
+.btn-ans.correct {
+  background-color: green;
+}
+
+.btn-ans.wrong {
+  background-color: red;
+}
+
+
+
+.btn-ans:hover {
+  background-color: #D9D9D9;
+  color: #284B63;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  
 .question1,
 .question2,
 .question3,
@@ -127,7 +191,7 @@ h1 {
     background-color: #284B63;
     color:  #D9D9D9;
     padding: 9px 16px;
-    /* border-color:  rgb(24, 101, 202); */
+     border-color:  rgb(24, 101, 202); 
     border-style: solid;
     border-radius: 20px;
     border-width: 1px;
@@ -141,14 +205,14 @@ h1 {
     width: 280px;
   }
 
-  /* .ans1-button:active,
+   .ans1-button:active,
   .ans2-button:active,
   .ans3-button:active, 
   .ans4-button:active, 
   .ans5-button:active  {
     background-color: red;
     color: white;
-   }   */
+   }   
 
 
 
@@ -167,7 +231,7 @@ h1 {
     background-color: #284B63;
     color:  #D9D9D9;
     padding: 9px 16px;
-    /* border-color:  rgb(24, 101, 202); */
+     border-color:  rgb(24, 101, 202); 
     border-style: solid;
     border-radius: 20px;
     border-width: 1px;
@@ -181,8 +245,8 @@ h1 {
     width: 280px;
   }
 
-    /* .correct-btn:active {
+     .correct-btn:active {
     background-color: green;
     color: white;
     border-color: black;
-  }   */
+  }     */

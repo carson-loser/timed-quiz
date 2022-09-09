@@ -1,32 +1,66 @@
-var question1 = {
-  question: "Q1",
-  answers: ["ans1", "ans2", "ans3", "ans4"],
-  correctAnswer: "ans3"
-};
+var start_btn = document.getElementById(#start-btn-loc)
 
-var question2 = {
-  question: "Q2",
-  answers: ["ans1", "ans2", "ans3", "ans4"],
-  correctAnswer: "ans1"
-};
+start_btn.addEventListener('click')
 
-var question3 = {
-  question: "Q3",
-  answers: ["ans1", "ans2", "ans3", "ans4"],
-  correctAnswer: "ans3"
-};
 
-var question4 = {
-  question: "Q4",
-  answers: ["ans1", "ans2", "ans3", "ans4"],
-  correctAnswer: "ans4"
-};
 
-var question5 = {
-  question: "Q5",
-  answers: ["ans1", "ans2", "ans3", "ans4"],
-  correctAnswer: "ans2"
-};
+
+function startQuiz() {
+
+}
+
+function nextQuestion () {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -79,8 +113,21 @@ var question5 = {
 
 // var start_btn = document.querySelector(".start-btn");
 // var hiscore_btn = document.querySelector(".hiScoreBtn");
-// var correctBtns = document.querySelectorAll(".correct-btn");
-// var correctBtns = ["script", "myFunction()", "both", "both head and body work", "terminal"];
+
+
+// var correctBtns = document.querySelectorAll("#correct-btn");
+// // console.log(correctBtns);
+
+// for (var i = 0; i < correctBtns.length; i++) {
+//   correctBtns[i].addEventListener("click", function (event) {
+//     event.preventDefault()
+//   correctBtns[i].setAttribute("style", "background-color: red; font-size: 15px");
+//   });
+ 
+//  }
+
+
+
 
 // // add an event listener for clicking start quiz
 
@@ -97,17 +144,12 @@ var question5 = {
 //   var answerButtons = document.querySelectorAll(".ans1-button");
 //   console.log(answerButtons);
   
-//   // correctBtns[0].addEventListener("click", function (event) {
-//   //   event.preventDefault()
   
 
 
 
 
 
-  // function correctQue()
-  // var correctButtons = document.querySelectorAll(".correct-btn");
-  // console.log(correctButtons);
   
   
   
@@ -116,7 +158,7 @@ var question5 = {
 //       event.preventDefault()
 //       document.querySelector(".question2").style = "display:block";
 //       document.querySelector(".question1").style = "display:none";
-//       // document.querySelector(".correct-btn").style ="background-color:green";
+      
 //     });
 
 //   }
