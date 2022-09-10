@@ -1,17 +1,23 @@
-var start_btn = document.getElementById(#start-btn-loc)
+var start_btn = document.getElementById('start-btn-loc')
+var section_hide = document.querySelector('.start-section')
+var main_content = document.querySelector('.content')
 
-start_btn.addEventListener('click')
+start_btn.addEventListener('click', () => {
+  start_btn.style.display = 'none';
+  section_hide.style.display = 'none';
+  main_content.style.display = 'block';
+})
 
 
 
 
-function startQuiz() {
 
-}
 
-function nextQuestion () {
 
-}
+
+
+
+
 
 
 
@@ -246,5 +252,5 @@ function setTime() {
     }
 
   }, 1000);
-}
+
 

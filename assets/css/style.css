@@ -85,14 +85,10 @@ h1 {
   align-items: center;
 }
 
-/* .startbtn {
-  text-align: center;
-  margin-top: 40px;
- 
-}  */
+
 
 .next-btn-real,
-.start-btn-real {
+.start-btn {
   background-color: #284B63;
   color: #D9D9D9;
   font-weight: bolder;
@@ -115,7 +111,13 @@ h1 {
   display: none;
 }
 
+.hidden {
+  display: none;
+}
 
+.content {
+  display: none;
+}
 
 .question {
   margin-top: 25px;
@@ -161,6 +163,8 @@ h1 {
   color: #284B63;
 }
   
+
+
 
 
 
