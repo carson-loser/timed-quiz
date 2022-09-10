@@ -87,7 +87,7 @@ h1 {
 
 
 
-.next-btn-real,
+.next-btn,
 .start-btn {
   background-color: #284B63;
   color: #D9D9D9;
@@ -101,8 +101,8 @@ h1 {
 }
 
 
-.next-btn-real:hover,
-.start-btn-real:hover {
+.next-btn:hover,
+.start-btn:hover {
   background-color:#0a2333;
 
 }

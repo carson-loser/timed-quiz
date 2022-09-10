@@ -1,16 +1,56 @@
 var start_btn = document.getElementById('start-btn-loc')
 var section_hide = document.querySelector('.start-section')
 var main_content = document.querySelector('.content')
+var timeEl = document.querySelector(".time-left");
+var secondsLeft = 60;
+var next_btn = document.getElementById('next-btn-loc')
 
-start_btn.addEventListener('click', () => {
-  start_btn.style.display = 'none';
-  section_hide.style.display = 'none';
-  main_content.style.display = 'block';
-})
+function setTime() {
+  // Sets interval in variable
+  var timerInterval = setInterval(function () {
+    secondsLeft--;
+    timeEl.textContent = secondsLeft;
 
+    if (secondsLeft === 0) {
+      // Stops execution of action at set interval
+      clearInterval(timerInterval);
+    }
+  }, 1000);
+}
 
+start_btn.addEventListener('click', startQuiz)
 
+function startQuiz () {
+  // console.log('started quiz')
+    start_btn.style.display = 'none';
+    section_hide.style.display = 'none';
+    main_content.style.display = 'block';
+    next_btn.style.display = 'block';
+    setTime();
+    nextQuestion()
+}
 
+function nextQuestion () {
+
+}
+
+function newAnswer () {
+
+}
+
+var questionList = [
+  {
+    question: 'Inside which HTML element do we put the JavaScript?',
+    answerChoices: [
+      { choice: '<js>', correct: false},
+      { choice: '<scripting>', correct: false},
+      { choice: '<script>', correct: true},
+      { choice: '<javascript>', correct: false},
+      
+      
+    ]
+  }
+]
 
 
 
@@ -252,5 +292,5 @@ function setTime() {
     }
 
   }, 1000);
-
+}
 
