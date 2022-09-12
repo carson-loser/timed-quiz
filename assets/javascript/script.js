@@ -4,7 +4,7 @@ var hiscore_btn = document.querySelector(".hiScoreBtn");
 
 
 var correctBtns = document.querySelectorAll("#correct-btn");
-// console.log(correctBtns);
+
 
 
 
@@ -12,7 +12,7 @@ for (var i = 0; i < correctBtns.length; i++) {
   correctBtns[i].addEventListener("click", function (event) {
     event.preventDefault()
  
-  // correctBtns[i].setAttribute("style", "background-color: red; font-size: 15px");
+
   });
  
  }
@@ -20,7 +20,7 @@ for (var i = 0; i < correctBtns.length; i++) {
 
 
 
-// add an event listener for clicking start quiz
+
 
 start_btn.addEventListener("click", function (event) {
   event.preventDefault()
@@ -82,12 +82,13 @@ function que5() {
   for (let i = 0; i < answerButtons.length; i++) {
     answerButtons[i].addEventListener("click", function (event) {
       event.preventDefault()
-        
+      
       
       window.location.assign('/index2.html')
     
     
       document.querySelector(".question5").style = "display:block";
+      
       document.querySelector(".question4").style = "display:none";
     });
   }
