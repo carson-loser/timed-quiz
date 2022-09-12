@@ -98,20 +98,29 @@ function que5() {
 
 var timeEl = document.querySelector(".time-left");
 
-var secondsLeft = 60;
+
+
+
+
+
+
 
 function setTime() {
-  // Sets interval in variable
+  var secondsLeft = 60;
   var timerInterval = setInterval(function () {
     secondsLeft--;
     timeEl.textContent = secondsLeft;
     localStorage.setItem('score', secondsLeft)
     if (secondsLeft === 0) {
-      // Stops execution of action at set interval
+      
       clearInterval(timerInterval);
     }
   }, 1000);
 }
+document.getElementById("incorrect").addEventListener('click', function() {
+  secondsLeft-= 15;
+  document.getElementById("timerDisplay").innerHTML="00:"
+})
 
 
 
