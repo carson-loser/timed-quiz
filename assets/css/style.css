@@ -33,7 +33,7 @@ h1 {
   text-align: center;
 }
 
-.hiScoreBtn {
+ .hiScoreBtn {
   background-color: #284B63;
   color: #D9D9D9;
   padding: 9px 16px;
@@ -47,25 +47,48 @@ h1 {
 }
 
 
+
+.question1, 
+.question2, 
+.question3, 
+.question4, 
+.question5 {
+  text-align: center
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 .rules-title {
   text-align: center;
   font-size: 25px;
   margin-top: 20px;
   font-weight: bold;
 }
-
-.rules-list {
+  
+ .rules-list {
   width: 700px;
   margin-top: 20px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-}
-
+} 
+ 
 .rules-underline {
   text-decoration: underline;
 }
-
+ 
 .rules {
   font-size: 20px;
   margin-top: 10px;
@@ -87,7 +110,7 @@ h1 {
 
 
 
-.next-btn,
+
 .start-btn {
   background-color: #284B63;
   color: #D9D9D9;
@@ -101,23 +124,17 @@ h1 {
 }
 
 
-.next-btn:hover,
+
 .start-btn:hover {
   background-color:#0a2333;
 
 }
 
-#next-btn-loc {
-  display: none;
-}
 
-.hidden {
-  display: none;
-}
 
-.content {
-  display: none;
-}
+
+
+
 
 .question {
   margin-top: 25px;
@@ -125,13 +142,12 @@ h1 {
   font-weight: bold;
 }
 
-.answer-btns {
-  display: grid;
-  justify-content: center;
-  
-}
 
-.btn-ans {
+.ans1-button,
+.ans2-button,
+.ans3-button,
+.ans4-button,
+.ans5-button {
   background-color: #284B63;
   color:  #D9D9D9;
   padding: 9px 16px;
@@ -148,21 +164,18 @@ h1 {
   width: 280px;
 }
 
-.btn-ans.correct {
-  background-color: green;
-}
-
-.btn-ans.wrong {
-  background-color: red;
-}
 
 
 
-.btn-ans:hover {
+.ans1-button:hover, 
+.ans2-button:hover, 
+.ans3-button:hover,
+.ans4-button:hover, 
+.ans5-button:hover {
   background-color: #D9D9D9;
   color: #284B63;
 }
-  
+   
 
 
 
