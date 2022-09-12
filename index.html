@@ -9,237 +9,195 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <title>JavaScript Quiz</title>
 </head>
-<header>
-  <div class="highscores">
-    <button class="hiScoreBtn">View Your Highscores</button>
-  </div>
-  <div class="timer-loc">
-    <div class="timer">Time: <span class="time-left">60</span></div>
-  </div>
-</header>
-<body>
-<div class="start-section">
-  <h1>JavaScript Quiz Challenge</h1>
 
-  <div class="rules-title">
-    <p>
-      <span class="rules-underline">Rules</span>
-    </p>
-  </div>
-  <div class="rules-list"></div>
-  <ul>
-    <li class="rules"> 1. When ready, click the "Start Quiz" button below to begin the quiz</li>
-    <li class="rules"> 2. You will have 60 seconds to complete 5 JavaScript based questions</li>
-    <li class="rules"> 3. Each question that is answered incorrectly will result in 15 seconds off your remaining time</li>
-    <li class="rules"> 4. When you finish the quiz, or if the timer runs out, submit your initials in the prompted box to keep track of your score</li>
-    <li class="rules"> 5. Come back frequently until you're able to get all 5 questions correct!</li>
-    <li class="rules"> 6. Good luck!</li>
-  </ul>
-  </div>
-  <div class = "main-buttons">
-      <button class = "start-btn" id = "start-btn-loc">Start Quiz</button> 
-      <button class = "next-btn" id = "next-btn-loc">Next</button>
-  </div>
 
-  <div class = "content">
-    <div class = "question-loc" id = "hidden">
-      <div class = "question" id = 'question'>Question</div>
-      <div class="answer-btns">
-        <button class = "btn-ans">Answer 1</button>
-        <button class = "btn-ans">Answer 2</button>
-        <button class = "btn-ans">Answer 3</button>
-        <button class = "btn-ans">Answer 4</button>
+
+
+     <header>
+      <div class="highscores">
+        <button class="hiScoreBtn">View Your Highscores</button>
+      </div>
+      <div class="timer-loc">
+        <div class="timer">Time: <span class="time-left">60</span></div>
+      </div>
+    </header>
+  <body>
+    <div class="start-section">
+      <h1>JavaScript Quiz Challenge</h1>
+  
+      <div class="rules-title">
+        <p>
+          <span class="rules-underline">Rules</span>
+        </p>
+      </div>
+  
+  
+      <div class="rules-list"></div>
+      <ul>
+        <li class="rules"> 1. When ready, click the "Start Quiz" button below to begin the quiz</li>
+        <li class="rules"> 2. You will have 60 seconds to complete 5 JavaScript based questions</li>
+        <li class="rules"> 3. Each question that is answered incorrectly will result in 15 seconds off your remaining time</li>
+        <li class="rules"> 4. When you finish the quiz, or if the timer runs out, submit your initials in the prompted box to keep track of your score</li>
+        <li class="rules"> 5. Come back frequently until you're able to get all 5 questions correct!</li>
+        <li class="rules"> 6. Good luck!</li>
+      </ul>
+  
+      <div class="startbtn-loc">
+        <button class="start-btn">Start Quiz</button>
       </div>
     </div>
-    
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- <header>
-    <div class="highscores">
-      <button class="hiScoreBtn">View Your Highscores</button>
-    </div>
-    <div class="timer-loc">
-      <div class="timer">Time: <span class="time-left">60</span></div>
-    </div>
-  </header>
-
-  <div class="start-section">
-    <h1>JavaScript Quiz Challenge</h1>
-
-    <div class="rules-title">
-      <p>
-        <span class="rules-underline">Rules</span>
-      </p>
-    </div>
-
-
-    <div class="rules-list"></div>
-    <ul>
-      <li class="rules"> 1. When ready, click the "Start Quiz" button below to begin the quiz</li>
-      <li class="rules"> 2. You will have 60 seconds to complete 5 JavaScript based questions</li>
-      <li class="rules"> 3. Each question that is answered incorrectly will result in 15 seconds off your remaining time</li>
-      <li class="rules"> 4. When you finish the quiz, or if the timer runs out, submit your initials in the prompted box to keep track of your score</li>
-      <li class="rules"> 5. Come back frequently until you're able to get all 5 questions correct!</li>
-      <li class="rules"> 6. Good luck!</li>
-    </ul>
-
-    <div class="startbtn-loc">
-      <button class="start-btn">Start Quiz</button>
-    </div>
-  </div>
-  <section style="display: none" class="question1">
-    <div class="question-title">
-      <p>Inside which HTML element do we put the JavaScript?</p>
-    </div>
-    <div class="question-ans-list">
-      <div class="answers">
-        <button class="ans1-button">js</button>
+    <section style="display: none" class="question1">
+      <div class="question-title">
+        <p>Inside which HTML element do we put the JavaScript?</p>
       </div>
-      <div class="answers">
-        <button class="ans1-button">scripting</button>
+      <div class="question-ans-list">
+        <div class="btn-ans">
+          <button class="ans1-button">js</button>
+        </div>
+        <div class="btn-ans">
+          <button class="ans1-button">scripting</button>
+        </div>
+        <div class="btn-ans">
+          <button class="ans1-button" id="correct-btn">script</button>
+        </div>
+        <div class="btn-ans">
+          <button class="ans1-button">javascript</button>
+        </div>
+  
       </div>
-      <div class="answers">
-        <button class="ans1-button" id="correct-btn">script</button>
+    </section>
+    <section style="display: none" class="question2">
+      <div class="question-title">
+        <p>How do you call a function named "myFunction"?</p>
       </div>
-      <div class="answers">
-        <button class="ans1-button">javascript</button>
+      <div class="question-ans2-list">
+        <div class="btn-ans">
+          <button class="ans2-button" id="correct-btn">myFunction()</button>
+        </div>
+        <div class="btn-ans">
+          <button class="ans2-button">call myFunction()</button>
+        </div>
+        <div class="btn-ans">
+          <button class="ans2-button">call function myFunction()</button>
+        </div>
+        <div class="btn-ans">
+          <button class="ans2-button">myFunction = call</button>
+        </div>
+  
       </div>
-
-    </div>
-  </section>
-  <section style="display: none" class="question2">
-    <div class="question-title">
-      <p>How do you call a function named "myFunction"?</p>
-    </div>
-    <div class="question-ans2-list">
-      <div class="answers">
-        <button class="ans2-button" id="correct-btn">myFunction()</button>
+  
+  
+    </section>
+    <section style="display: none" class="question3">
+      <div class="question-title">
+        <p>JavaScript is a ____ -side programming language?</p>
       </div>
-      <div class="answers">
-        <button class="ans2-button">call myFunction()</button>
+      <div class="question-ans3-list">
+        <div class="answers">
+          <button class="ans3-button">client</button>
+        </div>
+        <div class="answers">
+          <button class="ans3-button">server</button>
+        </div>
+        <div class="answers">
+          <button class="ans3-button" id="correct-btn">both</button>
+        </div>
+        <div class="answers">
+          <button class="ans3-button">none</button>
+        </div>
+  
       </div>
-      <div class="answers">
-        <button class="ans2-button">call function myFunction()</button>
+  
+  
+    </section>
+  
+    <section style="display: none" class="question4">
+      <div class="question-title">
+        <p>Where is the correct place to link JavaScript?</p>
       </div>
-      <div class="answers">
-        <button class="ans2-button">myFunction = call</button>
+      <div class="question-ans4-list">
+        <div class="answers">
+          <button class="ans4-button">body</button>
+        </div>
+        <div class="answers">
+          <button class="ans4-button">head</button>
+        </div>
+        <div class="answers">
+          <button class="ans4-button">JavaScript is automatically linked</button>
+        </div>
+        <div class="answers">
+          <button class="ans4-button" id="correct-btn">both head and body work</button>
+        </div>
+  
       </div>
-
-    </div>
-
-
-  </section>
-  <section style="display: none" class="question3">
-    <div class="question-title">
-      <p>JavaScript is a ____ -side programming language?</p>
-    </div>
-    <div class="question-ans3-list">
-      <div class="answers">
-        <button class="ans3-button">client</button>
+  
+  
+    </section>
+  
+    <section style="display: none" class="question5">
+      <div class="question-title">
+        <p>A very useful tool in the debugging process.</p>
       </div>
-      <div class="answers">
-        <button class="ans3-button">server</button>
+      <div class="question-ans5-list">
+        <div class="answers5">
+          <button class="ans5-button">VS Code</button>
+        </div>
+        <div class="answers">
+          <button class="ans5-button" id="correct-btn">Chrome Terminal</button>
+        </div>
+        <div class="answers">
+          <button class="ans5-button">JavaScript</button>
+        </div>
+        <div class="answers">
+          <button class="ans5-button">None of the above</button>
+        </div>
+  
       </div>
-      <div class="answers">
-        <button class="ans3-button" id="correct-btn">both</button>
-      </div>
-      <div class="answers">
-        <button class="ans3-button">none</button>
-      </div>
-
-    </div>
-
-
-  </section>
-
-  <section style="display: none" class="question4">
-    <div class="question-title">
-      <p>Where is the correct place to link JavaScript?</p>
-    </div>
-    <div class="question-ans4-list">
-      <div class="answers">
-        <button class="ans4-button">body</button>
-      </div>
-      <div class="answers">
-        <button class="ans4-button">head</button>
-      </div>
-      <div class="answers">
-        <button class="ans4-button">JavaScript is automatically linked</button>
-      </div>
-      <div class="answers">
-        <button class="ans4-button" id="correct-btn">both head and body work</button>
-      </div>
-
-    </div>
-
-
-  </section>
-
-  <section style="display: none" class="question5">
-    <div class="question-title">
-      <p>A very useful tool in the debugging process.</p>
-    </div>
-    <div class="question-ans5-list">
-      <div class="answers5">
-        <button class="ans5-button">VS Code</button>
-      </div>
-      <div class="answers">
-        <button class="ans5-button" id="correct-btn">Chrome Terminal</button>
-      </div>
-      <div class="answers">
-        <button class="ans5-button">JavaScript</button>
-      </div>
-      <div class="answers">
-        <button class="ans5-button">None of the above</button>
-      </div>
-
-    </div>
-
-
-  </section> -->
+  
+  
+    </section> 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
@@ -250,3 +208,61 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+<!--  -->
+
+
+
+
+    <!-- <header>
+      <div class="highscores">
+        <button class="hiScoreBtn">View Your Highscores</button>
+      </div>
+      <div class="timer-loc">
+        <div class="timer">Time: <span class="time-left">60</span></div>
+      </div>
+    </header>
+    <body>
+    <div class="start-section">
+      <h1>JavaScript Quiz Challenge</h1>
+    
+      <div class="rules-title">
+        <p>
+          <span class="rules-underline">Rules</span>
+        </p>
+      </div>
+      <div class="rules-list"></div>
+      <ul>
+        <li class="rules"> 1. When ready, click the "Start Quiz" button below to begin the quiz</li>
+        <li class="rules"> 2. You will have 60 seconds to complete 5 JavaScript based questions</li>
+        <li class="rules"> 3. Each question that is answered incorrectly will result in 15 seconds off your remaining time</li>
+        <li class="rules"> 4. When you finish the quiz, or if the timer runs out, submit your initials in the prompted box to keep track of your score</li>
+        <li class="rules"> 5. Come back frequently until you're able to get all 5 questions correct!</li>
+        <li class="rules"> 6. Good luck!</li>
+      </ul>
+      </div>
+      <div class = "main-buttons">
+          <button class = "start-btn" id = "start-btn-loc">Start Quiz</button> 
+          <button class = "next-btn" id = "next-btn-loc">Next</button>
+      </div>
+    
+      <div class = "content">
+        <div class = "question-loc" id = "hidden">
+          <div class = "question" id = 'question'>Question</div>
+          <div class="answer-btns">
+            <button class = "btn-ans">Answer1</button>
+            <button class = "btn-ans">Answer2</button>
+            <button class = "btn-ans">Ansswer3</button>
+            <button class = "btn-ans">Answer4</button>
+          </div>
+        </div>
+        
+      </div>  -->
