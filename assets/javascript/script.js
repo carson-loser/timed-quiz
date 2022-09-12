@@ -84,7 +84,7 @@ function que5() {
       event.preventDefault()
       
       
-      window.location.assign('/index2.html')
+      window.location.assign('./index2.html')
     
     
       document.querySelector(".question5").style = "display:block";
